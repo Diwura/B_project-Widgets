@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Accordion from './components/Accordion'
+import Search from './components/Search';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const items = [
+    {
+     title: 'Is Antartica a continent?',
+     content:" Antartica is a continent, located in the most southern most hemisphere"   
+    },
 
-export default App;
+    {
+        title: "what is the Aurerea Borealis",
+        content: "The Aurerea Borealis is the most populare of the .."
+    },
+
+    {
+        title: "Do fishes survive in Antatica?",
+        content: "We have fishes living in the Antartic but of limited species"
+    }
+]
+
+
+export default () => {
+    return (
+        <div>
+            <Search />
+        </div>
+    )
+};
